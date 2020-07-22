@@ -8,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -101,21 +102,22 @@
         <div class="hotel-info">
           <div class="hotel-info__text">
             <div class="hotel-wrapper">
-              <div class="stars"> 
+              <div class="stars">
                 <svg class="stars__icon" width="8" height="8">
-                  <use xlink:href="img/icons.svg#star"></use>>
+                  <use xlink:href="img/icons.svg#star"></use>
+                  >
                 </svg>
                 <svg class="stars__icon" width="8" height="8">
-                  <use xlink:href="img/icons.svg#star"></use>>
+                  <use xlink:href="img/icons.svg#star"></use>
                 </svg>
                 <svg class="stars__icon" width="8" height="8">
-                  <use xlink:href="img/icons.svg#star"></use>>
+                  <use xlink:href="img/icons.svg#star"></use>
                 </svg>
                 <svg class="stars__icon" width="8" height="8">
-                  <use xlink:href="img/icons.svg#star"></use>>
+                  <use xlink:href="img/icons.svg#star"></use>
                 </svg>
                 <svg class="stars__icon" width="8" height="8">
-                  <use xlink:href="img/icons.svg#star"></use>>
+                  <use xlink:href="img/icons.svg#star"></use>
                 </svg>
               </div>
               <h1 class="hotel-name hotel-info__name">GRAND HILTON HOTEL</h1>
@@ -137,9 +139,45 @@
           <!-- /.hotel-info__rating -->
         </div>
         <!-- /.hotel-info -->
+        <div class="hotel-grid">
+          <div class="slider">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="img/slaider.png" alt="Slider: foto hotel" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slaider.png" alt="Slider: foto hotel" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/slaider.png" alt="Slider: foto hotel" />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <button class="slider-button slider-button--prev">
+                <svg width="10" height="18">
+                  <use xlink:href="img/icons.svg#arrow-left"></use>
+                </svg>
+              </button>
+              <button class="slider-button slider-button--next">
+                <svg width="10" height="18">
+                  <use xlink:href="img/icons.svg#arrow-right"></use>
+                </svg>
+              </button>
+            </div>
+            <!-- /.swiper-container -->
+          </div>
+          <!-- /.slider -->
+        </div>
+        <!-- /.hotel-grid -->
       </div>
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
