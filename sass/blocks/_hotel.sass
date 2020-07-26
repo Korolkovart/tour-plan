@@ -30,6 +30,43 @@
     display: flex
     flex-direction: column
     justify-content: space-between
+  &-slider
+    width: 728px
+    &__item
+      width: 100%
+      height: 100%
+      position: relative
+      border-radius: 8px
+      overflow: hidden
+      &:after
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+        background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+        z-index: 10
+    &__button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      height: 30px
+      width: 30px
+      border: none
+      background-color: transparent
+      z-index: 99
+      cursor: pointer
+      &--next
+        right: 18px
+      &--prev
+        left: 18px
+      &__icon
+        fill: white
+        fill-opacity: 0.8
+        z-index: 100
 .stars
   width: 100%
 .offer
@@ -57,42 +94,6 @@
     line-height: 13px
     margin: 0
     margin: -3px
-.swiper-container 
-  width: 100%
-  height: 100%
-  position: relative
-  border-radius: 8px
-  &:after
-    content: ''
-    position: absolute
-    width: 100%
-    height: 100%
-    top: 0
-    bottom: 0
-    left: 0
-    right: 0
-    background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-    z-index: 10
-.slider
-  width: 728px
-  &-button
-    position: absolute
-    top: 50%
-    transform: translateY(-50%)
-    height: 30px
-    width: 30px
-    border: none
-    background-color: transparent
-    z-index: 99
-    cursor: pointer
-    &--next
-      right: 18px
-    &--prev
-      left: 18px
-    &__icon
-      fill: white
-      fill-opacity: 0.8
-      z-index: 100
 .booking
   background-color: $dark
   color: $light
