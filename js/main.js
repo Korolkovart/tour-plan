@@ -26,4 +26,4 @@ var reviewsSlider = new Swiper('.reviews-slider', {
   },
 });
 
-$('.newsletter__parallax-window').parallax({imageSrc: '/../img/newsletter-bg.jpeg'});
+$('.newsletter__parallax-window').parallax({imageSrc: '../img/newsletter-bg.jpeg'});
