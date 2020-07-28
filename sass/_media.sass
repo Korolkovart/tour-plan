@@ -15,6 +15,12 @@
   .card
     width: 230px
     height: 230px
+  .packages
+    display: flex
+    justify-self: center
+    &-wrapper
+      grid-template: repeat(3, 500px) / repeat(2, 350px)
+      
 
 @media ( max-width: 992px )
   .container .newsletter-wrapper
@@ -68,7 +74,12 @@
   .card
     width: 340px
     height: 255px
-
+  .packages
+    padding: 20px 0 50px
+    &__title
+      margin-bottom: 45px
+      font-size: 24px
+      line-height: 30px
 @media ( max-width: 768px )
   .container
     max-width: 576px
@@ -150,6 +161,18 @@
   .card
     width: 47%
     height: 255px
+  .packages
+    &-wrapper
+      grid-template: repeat(5, 500px)/1fr
+    &-active
+      grid-column: 1/2
+      flex-direction: column
+  .active
+    &__text
+      display: none
+    &__description
+      padding: 23px 21px 25px 32px
+
 @media ( max-width: 650px )
   .hotel
     &-right
