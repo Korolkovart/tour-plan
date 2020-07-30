@@ -91,12 +91,14 @@
     margin-bottom: 15px
     flex-basis: 48%
   &__message
+    min-height: 123px
     background-color: #FFFFFF
     border-radius: 4px
     padding: 18px 23px
     flex-basis: 100%
     border: none
     margin-bottom: 23px
+    resize: none
   &__button
     min-width: 160px
     min-height: 50px
@@ -111,6 +113,33 @@
     font-size: 12px
     line-height: 15px
     color: #E0E0E0
+  &__data
+    grid-column: 2 / 5
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-top: 94px
+    &-text
+      font-style: normal
+      font-weight: normal
+      font-size: 12px
+      line-height: 15px
+    &-link
+      text-decoration: none
+      color: inherit
+      margin-right: 13px
+    &-icon
+      display: flex
+    &-logo
+      width: 20px
+      height: 14px
+      overflow: hidden
+      margin-right: 8px
+    &-image
+      width: 100%
+      height: 100%
+      // object-fit: cover
+      background-position: center
 
 
 
