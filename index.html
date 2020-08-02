@@ -11,8 +11,7 @@
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <script
-      src="https://api-maps.yandex.ru/2.1/?apikey=e479eb3e-4f44-41c0-85fb-ca03b6d33ee2&lang=ru_RU"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=e479eb3e-4f44-41c0-85fb-ca03b6d33ee2&lang=ru_RU"></script>
   </head>
   <body>
     <header class="navbar navbar__mobile_fixed">
@@ -25,7 +24,10 @@
               class="logo__image"
             />
           </a>
-          <form action="#" class="search navbar__search navbar__search_mobile_hidden">
+          <form
+            action="#"
+            class="search navbar__search navbar__search_mobile_hidden"
+          >
             <input
               type="text"
               class="search__input"
@@ -68,7 +70,10 @@
               <!-- a. user -->
             </li>
             <li class="navbar-menu__item navbar-menu__item_mobile_visible">
-              <form action="#" class="search navbar__search navbar__search_mobile_visible">
+              <form
+                action="#"
+                class="search navbar__search navbar__search_mobile_visible"
+              >
                 <input
                   type="text"
                   class="search__input"
@@ -348,10 +353,7 @@
               </div>
               <!-- /.standart__add -->
               <div class="standart__add">
-                <img
-                  src="img/home.svg"
-                  alt="Icon:home"
-                />
+                <img src="img/home.svg" alt="Icon:home" />
                 <span class="standart__content">1 x Room</span>
               </div>
               <!-- /.standart__add -->
@@ -504,11 +506,16 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form action="#" class="subscribe newslatter__subscribe">
+        <form
+          action="send.php"
+          method="POST"
+          class="subscribe newslatter__subscribe"
+        >
           <input
             type="text"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
           />
           <button class="subscribe__button">
             Send
@@ -869,21 +876,24 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-3">Send us a message</h3>
-            <form action="#" class="footer__form">
+            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
+                name="name"
               />
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Phone Number*"
+                name="phone"
               />
               <textarea
                 class="footer__message"
                 cols="30"
                 placeholder="Message"
+                name="message"
               ></textarea>
               <button class="footer__button button">Send</button>
               <span class="footer__info">* Required Fields</span>
@@ -900,31 +910,46 @@
             <div class="footer__data-icon">
               <div class="footer__data-logo">
                 <a href="#" class="footer__data-link"
-                  ><img src="img/logo-amex.jpg" alt="Logo: Amex" class="footer__data-image"
+                  ><img
+                    src="img/logo-amex.jpg"
+                    alt="Logo: Amex"
+                    class="footer__data-image"
                 /></a>
               </div>
               <!-- /. footer__data-logo -->
               <div class="footer__data-logo">
                 <a href="#" class="footer__data-link"
-                  ><img src="img/logo-apple.jpg" alt="Logo Apple" class="footer__data-image"
+                  ><img
+                    src="img/logo-apple.jpg"
+                    alt="Logo Apple"
+                    class="footer__data-image"
                 /></a>
               </div>
               <!-- /. footer__data-logo -->
               <div class="footer__data-logo">
                 <a href="#" class="footer__data-link"
-                  ><img src="img/logo-amazon.jpg" alt="Logo: Amazon " class="footer__data-image"
+                  ><img
+                    src="img/logo-amazon.jpg"
+                    alt="Logo: Amazon "
+                    class="footer__data-image"
                 /></a>
               </div>
               <!-- /. footer__data-logo -->
               <div class="footer__data-logo">
                 <a href="#" class="footer__data-link"
-                  ><img src="img/logo-paypal.jpg" alt="Logo: PayPal" class="footer__data-image"
+                  ><img
+                    src="img/logo-paypal.jpg"
+                    alt="Logo: PayPal"
+                    class="footer__data-image"
                 /></a>
               </div>
               <!-- /. footer__data-logo -->
               <div class="footer__data-logo">
                 <a href="#" class="footer__data-link"
-                  ><img src="img/logo-mastercard.png" alt="Logo: MasterCard" class="footer__data-image"
+                  ><img
+                    src="img/logo-mastercard.png"
+                    alt="Logo: MasterCard"
+                    class="footer__data-image"
                 /></a>
               </div>
               <!-- /. footer__data-logo -->
