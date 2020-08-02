@@ -1,4 +1,4 @@
-var hotelSlider = new Swiper('.hotel-slider', {
+var hotelSlider = new Swiper(".hotel-slider", {
   // keyboard control
   keyboard: {
     enabled: true,
@@ -7,12 +7,12 @@ var hotelSlider = new Swiper('.hotel-slider', {
   loop: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.hotel-slider__button--next',
-    prevEl: '.hotel-slider__button--prev',
+    nextEl: ".hotel-slider__button--next",
+    prevEl: ".hotel-slider__button--prev",
   },
 });
 
-var reviewsSlider = new Swiper('.reviews-slider', {
+var reviewsSlider = new Swiper(".reviews-slider", {
   // keyboard control
   keyboard: {
     enabled: true,
@@ -21,8 +21,12 @@ var reviewsSlider = new Swiper('.reviews-slider', {
   loop: true,
   // Navigation arrows
   navigation: {
-    nextEl: '.reviews-slider__button--next',
-    prevEl: '.reviews-slider__button--prev',
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
   },
 });
 
+let menuButton = document.querySelector(".menu-button");
+menuButton.addEventListener("click", () => {
+  document.querySelector(".navbar-menu").classList.toggle("navbar-menu_visible");
+});
