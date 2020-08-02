@@ -1793,6 +1793,8 @@ template {
     right: 0;
     left: 0;
     bottom: 0;
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
   }
   .navbar-menu__list {
     padding-top: 30px;
@@ -1806,8 +1808,6 @@ template {
   }
   .navbar-menu__item_mobile_visible {
     display: block;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
   }
   .navbar-menu_visible {
     display: block;
