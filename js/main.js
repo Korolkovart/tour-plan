@@ -1,32 +1,60 @@
-var hotelSlider = new Swiper(".hotel-slider", {
-  // keyboard control
-  keyboard: {
-    enabled: true,
-  },
-  // Optional parameters
-  loop: true,
-  // Navigation arrows
-  navigation: {
-    nextEl: ".hotel-slider__button--next",
-    prevEl: ".hotel-slider__button--prev",
-  },
-});
+$(document).ready(function () {
+  var hotelSlider = new Swiper(".hotel-slider", {
+    // keyboard control
+    keyboard: {
+      enabled: true,
+    },
+    // Optional parameters
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: ".hotel-slider__button--next",
+      prevEl: ".hotel-slider__button--prev",
+    },
+  });
+  
+  var reviewsSlider = new Swiper(".reviews-slider", {
+    // keyboard control
+    keyboard: {
+      enabled: true,
+    },
+    // Optional parameters
+    loop: true,
+    // Navigation arrows
+    navigation: {
+      nextEl: ".reviews-slider__button--next",
+      prevEl: ".reviews-slider__button--prev",
+    },
+  });
+  
+  let menuButton = $(".menu-button");
+  menuButton.on("click", () => {
+    $(".navbar-menu").toggleClass("navbar-menu_visible");
+  });
 
-var reviewsSlider = new Swiper(".reviews-slider", {
-  // keyboard control
-  keyboard: {
-    enabled: true,
-  },
-  // Optional parameters
-  loop: true,
-  // Navigation arrows
-  navigation: {
-    nextEl: ".reviews-slider__button--next",
-    prevEl: ".reviews-slider__button--prev",
-  },
-});
+  let modalButton = $('[data-toggle=modal]');
+  let closeModalButton = $('.modal__close');
+  modalButton.on('click', openModal);
+  closeModalButton.on('click', closeModal);
 
-let menuButton = document.querySelector(".menu-button");
-menuButton.addEventListener("click", () => {
-  document.querySelector(".navbar-menu").classList.toggle("navbar-menu_visible");
+  function openModal(){
+    let modalOverlay = $('.modal__overlay');
+    let modalDialog = $('.modal__dialog');
+    modalOverlay.addClass('modal__overlay_visible');
+    modalDialog.addClass('modal__dialog_visible');
+  }
+
+  function closeModal(event){
+    event.preventDefault();
+    let modalOverlay = $('.modal__overlay');
+    let modalDialog = $('.modal__dialog');
+    modalOverlay.removeClass('modal__overlay_visible');
+    modalDialog.removeClass('modal__dialog_visible');
+  }
+
+  $(document).on('keydown', function(e) {
+    if (e.keyCode = 27)
+    closeModal(event);
+  })
+
 });
