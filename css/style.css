@@ -44,6 +44,7 @@ img {
   color: #FFFFFF;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .form {
@@ -58,6 +59,14 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.invalid {
+  color: #EC1F46;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 15px;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -1177,6 +1186,7 @@ template {
   border: none;
   background-color: #EC1F46;
   color: #FFFFFF;
+  cursor: pointer;
 }
 
 .reviews {
@@ -1540,6 +1550,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
@@ -1669,13 +1683,17 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
 }
 
 .modal__message {
   width: 100%;
   min-height: 123px;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal__button {
+  margin-top: 15px;
 }
 
 .modal__info {
@@ -1716,6 +1734,10 @@ template {
     -ms-grid-rows: (500px)[3];
     -ms-grid-columns: (350px)[2];
         grid-template: repeat(3, 500px)/repeat(2, 350px);
+  }
+  .footer__input-group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 
@@ -1812,7 +1834,7 @@ template {
         grid-template-columns: repeat(6, 1fr);
     grid-row-gap: 40px;
   }
-  .footer__input {
+  .footer__input-group {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
   }
@@ -2156,6 +2178,10 @@ template {
   }
   .map-slider {
     height: 300px;
+  }
+  .footer__input-group {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
   }
 }
 

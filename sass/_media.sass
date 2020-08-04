@@ -20,6 +20,10 @@
     justify-self: center
     &-wrapper
       grid-template: repeat(3, 500px) / repeat(2, 350px)
+  .footer
+    &__input
+      &-group
+        flex-basis: 100%
 @media ( max-width: 992px )
   .container
     max-width: 750px
@@ -85,7 +89,8 @@
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
     &__input
-      flex-basis: 48%
+      &-group
+        flex-basis: 48%
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -283,12 +288,6 @@
       &-text
         flex-basis: 100%
         margin-bottom: 20px
-
-
-
-
-    
-
 @media ( max-width: 650px )
   .hotel
     &-right
@@ -302,8 +301,10 @@
     width: 100%
     &-slider
       height: 300px
-  
-
+  .footer
+    &__input
+      &-group
+        flex-basis: 100%
 @media ( max-width: 576px )
   .logo
     width: 99px
