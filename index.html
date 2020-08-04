@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://api-maps.yandex.ru/2.1/?apikey=e479eb3e-4f44-41c0-85fb-ca03b6d33ee2&lang=ru_RU"></script>
   </head>
@@ -17,7 +18,10 @@
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="#" class="logo" 
+          data-aos="fade-right"
+          data-aos-delay="100"
+          >
             <img
               src="img/horizontal-logo.png"
               alt="Logo: Best Tour Plan"
@@ -27,6 +31,8 @@
           <form
             action="#"
             class="search navbar__search navbar__search_mobile_hidden"
+            data-aos="fade-right"
+            data-aos-delay="200"
           >
             <input
               type="text"
@@ -37,7 +43,10 @@
               <img src="img/search.svg" alt="Icon: search" />
             </button>
           </form>
-          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
+          <a href="#" class="user navbar__user navbar__user_mobile_hidden" 
+          data-aos="fade-right"
+          data-aos-delay="300"
+          >
             <img
               src="img/user-avatar.jpg"
               alt="Avatar: Nathan"
@@ -59,7 +68,7 @@
         <div class="container">
           <ul class="navbar-menu__list">
             <li class="navbar-menu__item navbar-menu__item_mobile_visible">
-              <a href="#" class="user navbar__user navbar__user_mobile_visible">
+              <a href="#" class="user navbar__user navbar__user_mobile_visible"></a>
                 <img
                   src="img/user-avatar.jpg"
                   alt="Avatar: Nathan"
@@ -131,7 +140,7 @@
     <section class="hotel">
       <div class="container">
         <div class="hotel-info">
-          <div class="hotel-info__text">
+          <div class="hotel-info__text" data-aos="fade-right">
             <div class="hotel-wrapper">
               <div class="stars">
                 <svg class="stars__icon" width="8" height="8">
@@ -161,7 +170,7 @@
             <!-- /.stars -->
           </div>
           <!-- /.hotel-info__text -->
-          <div class="rating hotel-info__rating">
+          <div class="rating hotel-info__rating" data-aos="fade-left">
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/</span>
             <span class="rating__couter-small">5</span>
@@ -175,14 +184,14 @@
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
-              <div class="swiper-slide hotel-slider__item">
+              <div class="swiper-slide hotel-slider__item" data-aos="fade-right">
                 <img
                   class="hotel-slider__image"
                   src="img/slaider.png"
                   alt="Slider: foto hotel"
                 />
               </div>
-              <div class="swiper-slide hotel-slider__item">
+              <div class="swiper-slide hotel-slider__item" >
                 <img
                   class="hotel-slider__image"
                   src="img/slaider.png"
@@ -210,7 +219,7 @@
             </button>
           </div>
           <!-- /.swiper-container -->
-          <div class="hotel-right">
+          <div class="hotel-right" data-aos="fade-left">
             <div class="booking">
               <div class="booking__info">
                 <div class="booking__price">
@@ -269,7 +278,9 @@
       <div class="container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages-wrapper">
-          <div class="packages-active active">
+          <div class="packages-active active" data-aos="zoom-in"
+          data-aos-delay="100"
+          data-aos-duration="300">
             <div class="active__photo">
               <img
                 class="active__image"
@@ -331,7 +342,8 @@
             <!-- /.active__description -->
           </div>
           <!-- /. active__active -->
-          <div class="packages-standart standart">
+          <div class="packages-standart standart" data-aos="zoom-in"
+          data-aos-delay="300">
             <div class="standart__photo">
               <img
                 class="standart__image"
@@ -371,7 +383,8 @@
             <!-- /.standart_description -->
           </div>
           <!-- /.packages-standart standart -->
-          <div class="packages-standart standart">
+          <div class="packages-standart standart" data-aos="zoom-in"
+          data-aos-delay="300">
             <div class="standart__photo">
               <img
                 class="standart__image"
@@ -411,7 +424,8 @@
             <!-- /.standart_description -->
           </div>
           <!-- /.packages-standart standart -->
-          <div class="packages-standart standart">
+          <div class="packages-standart standart" data-aos="zoom-in"
+          data-aos-delay="500">
             <div class="standart__photo">
               <img
                 class="standart__image"
@@ -451,7 +465,8 @@
             <!-- /.standart_description -->
           </div>
           <!-- /.packages-standart standart -->
-          <div class="packages-standart standart">
+          <div class="packages-standart standart" data-aos="zoom-in"
+          data-aos-delay="500">
             <div class="standart__photo">
               <img
                 class="standart__image"
@@ -504,14 +519,15 @@
       data-image-src="img/newsletter-bg.jpeg"
     >
       <div class="newsletter-wrapper">
-        <h2 class="newsletter-title newsletter__title">
+        <h2 class="newsletter-title newsletter__title" data-aos="zoom-in-right">
           subscribe to our
-          <span class="newsletter-title__strong">Newsletter</span>
+          <span class="newsletter-title__strong" data-aos="zoom-in-right">Newsletter</span>
         </h2>
         <form
           action="send.php"
           method="POST"
           class="subscribe newslatter__subscribe form"
+          data-aos="zoom-in-left"
         >
           <input
             type="email"
@@ -685,7 +701,7 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div class="card activities__card " data-aos="zoom-in" data-aos-delay="100">
             <img
               src="img/activity-1.jpg"
               alt="The curious corner 
@@ -696,7 +712,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /. card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="zoom-in" data-aos-delay="300">
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf
@@ -707,7 +723,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /. card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="zoom-in" data-aos-delay="500">
             <img
               src="img/activity-3.jpg"
               alt="Tamarind falls hiking
@@ -719,7 +735,7 @@
             <button class="card__button">Book Now</button>
           </div>
           <!-- /. card -->
-          <div class="card activities__card">
+          <div class="card activities__card" data-aos="zoom-in" data-aos-delay="700">
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery
@@ -1022,6 +1038,7 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
