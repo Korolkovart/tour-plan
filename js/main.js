@@ -57,6 +57,13 @@ $(document).ready(function () {
     modalDialog.removeClass('modal__dialog_visible');
   }
 
+  $(document).mouseup(function (e) {
+    var container = $(".modal__dialog");
+    if (container.has(e.target).length === 0){
+      closeModal(event);
+    }
+  });
+
   $('.form').each(function () {
     $(this).validate({
       errorClass: "invalid",
