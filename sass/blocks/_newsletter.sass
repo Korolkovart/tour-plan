@@ -40,7 +40,7 @@
   width: 350px
   height: 55px
   border-radius: 4px
-  overflow: hidden
+  overflow: visible
   &__input
     padding-left: 33px
     padding-right: 75px
@@ -52,10 +52,9 @@
     font-weight: 300
     font-size: 14px
     line-height: 18px
-  // &__input ~ .invalid
-  //   position: absolute
-  //   margin-top: 10px
-  //   top: 20px
+  &__input ~ .invalid
+    position: absolute
+    top: 70px
   &__button
     position: absolute
     right: 0
