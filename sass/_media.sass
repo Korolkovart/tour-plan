@@ -117,14 +117,14 @@
       grid-column: 1 / 7
 @media ( max-width: 768px )
   .container
-    max-width: 576px
+    max-width: 700px
     width: 92%
   body
     padding-top: 78px
   .navbar
     &-top
-      padding-top: 28px
-      padding-bottom: 28px
+      padding-top: 30px
+      padding-bottom: 30px
     &-menu
       display: none
       position: fixed
@@ -133,14 +133,21 @@
       left: 0
       bottom: 0
       transition: all 1s linear
+      overflow: auto
       &__list
         padding-top: 30px
-        flex-direction: column
+        display: flex
+        flex-wrap: wrap
+        align-content: flex-start
+        align-items: center
+        justify-content: space-between
+        text-align: center
       &__item
         margin-bottom: 20px
-        &_mobile
-          &_visible
-            display: block
+        width: 100%
+        display: block
+      &__item:nth-child(2)
+        display: flex
       &_visible
         display: block
     &__mobile
@@ -159,6 +166,9 @@
     &__user
       flex-direction: column
       justify-content: center
+  .serch
+    &__input
+      width: 40px
   .menu
     &-button
       width: 16px
@@ -181,7 +191,6 @@
         color: $light
         margin-left: 0
         margin-top: 10px
-
   .stars
     flex-basis: content
   .hotel
@@ -324,6 +333,33 @@
   .activities
     &__card:nth-child(2n+1)
       margin-right: 0
+  .modal
+    overflow: auto
+    &__dialog
+      width: 300px
+      padding: 24px 30px
+    &__button
+      margin-bottom: 10px
+@media ( max-width: 768px ) and (orientation: landscape)
+  .navbar
+    &-top
+      padding-top: 30px
+      padding-bottom: 30px
+    &-menu
+      &__list
+        text-align: center
+      &__item
+        margin-bottom: 20px
+        width: 50%
+      &__item:last-child
+        width: 100%
+      &__item:nth-child(-n+2)
+        width: 100%
+        display: block
+      &__item:nth-child(2)
+        display: flex
+      &_visible
+        display: block    
 
 
 
