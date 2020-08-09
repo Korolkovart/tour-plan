@@ -25,6 +25,22 @@
     border-radius: 8px
     overflow: hidden
 .active
+  position: relative
+  &__offer
+    position: absolute
+    top: 26px
+    left: 0
+    padding: 8px 21px 7px 11px
+    min-width: 95px
+    min-height: 30px
+    font-style: normal
+    font-weight: 600
+    font-size: 11px
+    line-height: 15px
+    color: $light
+    background-color: $primary
+    text-decoration: underline
+    border-radius: 0px 4px 4px 0px
   &__photo
     flex-basis: 50%
     width: 100%
@@ -98,6 +114,19 @@
     cursor: pointer
     margin-top: 10px
 .standart
+  position: relative
+  &__offer
+    position: absolute
+    top: 26px
+    left: 0
+    padding: 1px 9px 1px 9px
+    font-style: normal
+    font-weight: 600
+    font-size: 8px
+    line-height: 15px
+    color: $light
+    background-color: $primary
+    border-radius: 0px 4px 4px 0px
   &__photo
     flex-basis: 50%
     width: 100%
@@ -108,9 +137,11 @@
     height: 100%
     object-fit: cover
   &__description
-    padding: 10px 21px 25px 32px
+    padding: 10px 21px 30px 32px
     background-color: $dark
     color: $light
+    border-bottom-left-radius: 8px
+    border-bottom-right-radius: 8px
   &__title
     font-style: normal
     font-weight: bold

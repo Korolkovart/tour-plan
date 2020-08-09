@@ -7,7 +7,10 @@
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <meta name="theme-color" content="#ffffff" />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -16,7 +19,7 @@
     <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#" class="logo">
+          <a href="index.html" class="logo">
             <!-- data-aos="fade-right"
           data-aos-delay="100" -->
             <img
@@ -182,14 +185,14 @@
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slaider.jpg"
+                  src="img/slaider-2.jpg"
                   alt="Slider: foto hotel"
                 />
               </div>
               <div class="swiper-slide hotel-slider__item">
                 <img
                   class="hotel-slider__image"
-                  src="img/slaider.jpg"
+                  src="img/slaider-3.jpg"
                   alt="Slider: foto hotel"
                 />
               </div>
@@ -204,7 +207,6 @@
             </button>
             <button class="hotel-slider__button hotel-slider__button--next">
               <img
-                class="slider-button__icon"
                 src="img/arrow-right.svg"
                 alt="Icon: arrow-right"
               />
@@ -252,7 +254,11 @@
                 </a>
               </div>
               <!-- /.booking__call-center-->
-              <button data-toggle="modal" class="button booking__button">
+              <button
+                data-toggle="modal"
+                data-href="#send-modal"
+                class="button booking__button"
+              >
                 View Other Options
               </button>
             </div>
@@ -277,6 +283,7 @@
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages-wrapper">
           <div class="packages-active active">
+            <span class="active__offer" >Flash Offer</span>
             <!-- data-aos="zoom-in"
           data-aos-delay="100"
           data-aos-duration="300" -->
@@ -324,7 +331,13 @@
                   <span class="active__real-price">$ 8,500</span>
                 </div>
                 <!-- /.active__price -->
-                <button class="active__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="active__button"
+                >
+                  Book Now
+                </button>
               </div>
               <!-- /.active__footer -->
             </div>
@@ -332,6 +345,7 @@
           </div>
           <!-- /. active__active -->
           <div class="packages-standart standart">
+            <span class="standart__offer" >Flash Offer</span>
             <!-- data-aos="zoom-in"
           data-aos-delay="300" -->
             <div class="standart__photo">
@@ -366,7 +380,13 @@
                   <span class="standart__former-price">$ 8,500</span>
                   <strong class="standart__real-price">$ 3,000</strong>
                 </div>
-                <button class="standart__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="standart__button"
+                >
+                  Book Now
+                </button>
               </div>
               <!-- /.standart__footer -->
             </div>
@@ -374,6 +394,7 @@
           </div>
           <!-- /.packages-standart standart -->
           <div class="packages-standart standart">
+            <span class="standart__offer" >Flash Offer</span>
             <!-- data-aos="zoom-in"
           data-aos-delay="300" -->
             <div class="standart__photo">
@@ -408,7 +429,13 @@
                   <span class="standart__former-price">$ 10,500</span>
                   <strong class="standart__real-price">$ 9,500</strong>
                 </div>
-                <button class="standart__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="standart__button"
+                >
+                  Book Now
+                </button>
               </div>
               <!-- /.standart__footer -->
             </div>
@@ -416,6 +443,7 @@
           </div>
           <!-- /.packages-standart standart -->
           <div class="packages-standart standart">
+            <span class="standart__offer" >Flash Offer</span>
             <!-- data-aos="zoom-in"
           data-aos-delay="500" -->
             <div class="standart__photo">
@@ -450,7 +478,13 @@
                   <span class="standart__former-price">$ 4,500</span>
                   <strong class="standart__real-price">$ 2,500</strong>
                 </div>
-                <button class="standart__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="standart__button"
+                >
+                  Book Now
+                </button>
               </div>
               <!-- /.standart__footer -->
             </div>
@@ -458,6 +492,7 @@
           </div>
           <!-- /.packages-standart standart -->
           <div class="packages-standart standart">
+            <span class="standart__offer" >Flash Offer</span>
             <!-- data-aos="zoom-in"
           data-aos-delay="500" -->
             <div class="standart__photo">
@@ -492,7 +527,13 @@
                   <span class="standart__former-price">$ 6,500</span>
                   <strong class="standart__real-price">$ 3,500</strong>
                 </div>
-                <button class="standart__button">Book Now</button>
+                <button
+                  data-toggle="modal"
+                  data-href="#booking-modal"
+                  class="standart__button"
+                >
+                  Book Now
+                </button>
               </div>
               <!-- /.standart__footer -->
             </div>
@@ -523,7 +564,7 @@
         <form
           action="send.php"
           method="POST"
-          class="subscribe newslatter__subscribe form"
+          class="newslatter-subscribe subscribe form"
         >
           <!-- data-aos="zoom-in-left" -->
           <input
@@ -558,27 +599,27 @@
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
@@ -613,27 +654,27 @@
                   <span class="reviews-slider__date">Stayed 20 Feb, 2018</span>
                   <div class="reviews-slider__rating">
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__con"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
@@ -668,27 +709,27 @@
                   <span class="reviews-slider__date">Stayed 10 Dec, 2020</span>
                   <div class="reviews-slider__rating">
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
                     <img
-                      class="stars__icon"
+                      class="reviews-slider__icon"
                       src="img/star.svg"
                       alt="Icon: Star"
                     />
@@ -736,8 +777,14 @@
             of chamarel"
               class="card__image"
             />
-            <h3 class="card__title">The curious corner of chamarel</h3>
-            <button class="card__button">Book Now</button>
+            <h3 class="card__title">The curious corner of&nbsp;chamarel</h3>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /. card -->
           <div class="card activities__card">
@@ -749,7 +796,13 @@
               class="card__image"
             />
             <h3 class="card__title">Gymkhana club golf course</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /. card -->
           <div class="card activities__card">
@@ -761,8 +814,16 @@
             "
               class="card__image"
             />
-            <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-            <button class="card__button">Book Now</button>
+            <h3 class="card__title">
+              Tamarind falls hiking trip&nbsp;-&nbsp;full day
+            </h3>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /. card -->
           <div class="card activities__card">
@@ -774,7 +835,13 @@
               class="card__image"
             />
             <h3 class="card__title">The blue marine discovery quest</h3>
-            <button class="card__button">Book Now</button>
+            <button
+              data-toggle="modal"
+              data-href="#booking-modal"
+              class="card__button"
+            >
+              Book Now
+            </button>
           </div>
           <!-- /. card -->
         </div>
@@ -786,11 +853,13 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-wrapper">
-          <img
+          <a href="index.html" class="footer__logo">
+            <img
             src="img/vertical-logo.svg"
             alt="Icon: Best Tour Plan"
-            class="logo footer__logo"
+            class="logo "
           />
+          </a>
           <div class="footer__list footer__categoties">
             <h3 class="footer__title">ALL CATEGORIES</h3>
             <ul class="footer__ul">
@@ -822,7 +891,7 @@
           </div>
           <!-- /. footer__list -->
           <div class="footer__list footer__additional">
-            <h3 class="footer__title">ADDITIONAL INFORMATION</h3>
+            <h3 class="footer__title">ADDITIONAL&nbsp;INFORMATION</h3>
             <ul class="footer__ul">
               <li class="footer__item">
                 <a href="#" class="footer__link">About Us</a>
@@ -910,19 +979,34 @@
                 </div>
                 <!-- /.footer__icon-wrapper -->
                 <span>
-                Tel (business hours) :<a class="footer__item_link" href="tel:2691500">269&nbsp;1500</a> <br />
-                Tel (hotline) Monday - Saturday:<a class="footer__item_link" href="tel:52-56-61-38">52-56-61-38</a>(08:00&nbsp;am –
-                20:00&nbsp;pm) <br />
-                Tel (hotline) Sunday:<a class="footer__item_link" href="tel:52-56-61-38">52-56-61-38</a>(08:00&nbsp;am –
-                14:00&nbsp;pm) <br />
-              </span>
+                  Tel (business hours) :<a
+                    class="footer__item_link"
+                    href="tel:2691500"
+                    >269&nbsp;1500</a
+                  >
+                  <br />
+                  Tel (hotline) Monday - Saturday:<a
+                    class="footer__item_link"
+                    href="tel:52-56-61-38"
+                    >52-56-61-38</a
+                  >(08:00&nbsp;am – 20:00&nbsp;pm) <br />
+                  Tel (hotline) Sunday:<a
+                    class="footer__item_link"
+                    href="tel:52-56-61-38"
+                    >52-56-61-38</a
+                  >(08:00&nbsp;am – 14:00&nbsp;pm) <br />
+                </span>
               </li>
               <li class="footer__item footer__item--mb-2">
                 <div class="footer__icon-wrapper">
                   <img src="img/email.svg" alt="Icon: email" />
                 </div>
                 <!-- /.footer__icon-wrapper -->
-                <a class="footer__item_link" href="mailto:cherly.lawson@example.com">cherly.lawson@example.com</a>
+                <a
+                  class="footer__item_link"
+                  href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -936,6 +1020,7 @@
                   class="input footer__input"
                   placeholder="Your Full Name*"
                   name="name"
+                  minlength="2"
                   required
                 />
               </div>
@@ -946,14 +1031,13 @@
                   class="input footer__input phone_us"
                   placeholder="Phone Number*"
                   name="phone"
-                  minlength="10"
+                  minlength="17"
                   required
                 />
               </div>
               <!-- /.footer__input-group -->
               <textarea
                 class="message footer__message"
-                cols="30"
                 placeholder="Message"
                 name="message"
               ></textarea>
@@ -973,7 +1057,7 @@
           <!-- /.footer__data-text -->
           <div class="footer__data-icon">
             <div class="footer__data-logo">
-              <a href="#" class="footer__data-link"
+              <a href="https://www.americanexpress.com" target="_blank" class="footer__data-link"
                 ><img
                   src="img/logo-amex.jpg"
                   alt="Logo: Amex"
@@ -982,7 +1066,7 @@
             </div>
             <!-- /. footer__data-logo -->
             <div class="footer__data-logo">
-              <a href="#" class="footer__data-link"
+              <a href="https://www.apple.com/ru" target="_blank" class="footer__data-link"
                 ><img
                   src="img/logo-apple.jpg"
                   alt="Logo Apple"
@@ -991,7 +1075,7 @@
             </div>
             <!-- /. footer__data-logo -->
             <div class="footer__data-logo">
-              <a href="#" class="footer__data-link"
+              <a href="https://www.amazon.com/" target="_blank" class="footer__data-link"
                 ><img
                   src="img/logo-amazon.jpg"
                   alt="Logo: Amazon "
@@ -1000,7 +1084,7 @@
             </div>
             <!-- /. footer__data-logo -->
             <div class="footer__data-logo">
-              <a href="#" class="footer__data-link"
+              <a href="https://www.paypal.com/ru" target="_blank" class="footer__data-link"
                 ><img
                   src="img/logo-paypal.jpg"
                   alt="Logo: PayPal"
@@ -1009,7 +1093,7 @@
             </div>
             <!-- /. footer__data-logo -->
             <div class="footer__data-logo">
-              <a href="#" class="footer__data-link"
+              <a href="https://www.mastercard.ru/" target="_blank" class="footer__data-link"
                 ><img
                   src="img/logo-mastercard.jpg"
                   alt="Logo: MasterCard"
@@ -1024,7 +1108,7 @@
       </div>
       <!-- /.container -->
     </footer>
-    <div class="modal">
+    <div class="modal" id="send-modal">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
@@ -1046,7 +1130,52 @@
             class="input modal__input phone_us"
             placeholder="Phone Number*"
             name="phone"
-            minlength="10"
+            minlength="17"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            cols="30"
+            placeholder="Message"
+            name="message"
+          ></textarea>
+          <button class="modal__button button">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="booking-modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <h3 class="modal__title modal__title--mb-3">Booking</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input phone_us"
+            placeholder="Phone Number*"
+            name="phone"
+            minlength="17"
             required
           />
           <input
