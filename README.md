@@ -10,7 +10,7 @@ Name | Description
 ------------ | -------------
 [Sass](https://sass-lang.com) | stylesheet language
 [БЭМ](https://ru.bem.info/) |  методология web-разработки
-[Design]| Adaptive Layout
+Design| Adaptive Layout
 [jQuery](https://jquery.com) | JavaScript library
 
 ### 👾  You can visit last built version of application by [link](https://landing-page-2.surge.sh/) 
