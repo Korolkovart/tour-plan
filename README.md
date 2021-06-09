@@ -7,6 +7,7 @@ Here is a list of tools that I include in the project
 
 ### Frontend - HTML,Css (Sass), JavaScript (jQuery)
 Name | Description
+------------ | -------------
 [Sass](https://sass-lang.com) | stylesheet language
 [БЭМ](https://ru.bem.info/) |  методология web-разработки
 [Design]| Adaptive Layout
