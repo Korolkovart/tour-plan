@@ -9,8 +9,8 @@ Here is a list of tools that I include in the project
 Name | Description
 ------------ | -------------
 [Sass](https://sass-lang.com) | stylesheet language
-[БЭМ](https://ru.bem.info/) |  методология web-разработки
-Design| Adaptive Layout
+[БЭМ](https://ru.bem.info/) |  web development methodology
+Design| Adaptive Layout & use flex and grid layout
 [jQuery](https://jquery.com) | JavaScript library
 
 ### 👾  You can visit last built version of application by [link](https://landing-page-2.surge.sh/) 
